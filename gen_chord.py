@@ -1,7 +1,8 @@
 import markovify
-with open('data/all_progressions') as file:
+
+inputfile = 'data/all_progressions'
+with open(inputfile) as file:
   text = file.read()
-print(text)
 text_model = markovify.Text(text)
 
 length = 100
